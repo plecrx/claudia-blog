@@ -8,7 +8,7 @@ export const Navbar: FC = () => {
     <Section>
       <div className="flex justify-between">
         <Link href="/">
-          <div className="flex items-center bg-gradient-to-br from-orange-800 to-orange-700 bg-clip-text text-xl font-bold text-transparent">
+          <div className="flex items-center bg-gradient-to-br from-orange-800 to-orange-700 bg-clip-text text-xl font-bold text-transparent hover:text-amber-500">
             <svg
               className="mr-1 h-10 w-10 stroke-orange-800"
               xmlns="http://www.w3.org/2000/svg"

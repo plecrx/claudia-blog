@@ -7,7 +7,7 @@ interface RecentPostsProps {
 }
 
 export const RecentPosts: FC<RecentPostsProps> = ({ posts }) => {
-  const truncPostList = posts.slice(0, 3)
+  const truncPostList = posts.slice(0, 2)
 
   return <Section>
     <div className="mb-6 text-2xl font-bold">
