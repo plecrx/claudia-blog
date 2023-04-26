@@ -10,26 +10,26 @@ interface BlogCardProps {
 }
 
 export const BlogCard: FC<BlogCardProps> = ({ post }) => (
-  <Link className="opacity-80 hover:opacity-100" href={`/posts/${post.slug.current}`}>
-    <div className="overflow-hidden rounded-lg bg-slate-800 bg-orange-700 shadow-lg shadow-orange-700/50 text-yellow-100">
-      <div className="aspect-w-3 aspect-h-2">
+  <Link className="opacity-100 hover:opacity-80" href={`/posts/${post.slug.current}`}>
+    <div className="flex items-center overflow-hidden rounded-lg bg-orange-700 shadow-lg shadow-orange-700/50 text-yellow-100">
+      <div className="aspect-w-3 aspect-h-2 shrink-0">
         <img
           src={urlFor(post.image && post.image[0]).toString()}
-          className="h-full w-full object-cover object-center"
+          className="h-96 md:h-auto md:w-32 w-full object-cover object-center"
           loading="lazy"
         />
       </div>
 
-      <div className="px-3 pt-4 pb-6 text-center">
-        <h2 className="text-xl font-semibold">
+      <div className="px-3 pb-6 text-start truncate">
+        <h3 className="text-lg font-semibold truncate">
           {post.title}
-        </h2>
+        </h3>
 
-        <div className="mt-1 text-xs text-yellow-400">
+        <div className="text-xs text-yellow-400">
           {format(new Date(post.publishedAt), 'd MMMM yyyy', { locale: fr})}
         </div>
 
-        <div className="mt-2 text-sm">
+        <div className="mt-2 text-sm truncate">
           {post.description}
         </div>
       </div>

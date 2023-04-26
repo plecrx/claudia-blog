@@ -16,7 +16,7 @@ export const RecentPosts: FC<RecentPostsProps> = ({ posts }) => {
           <strong>Publications</strong> récentes
         </div>
 
-        <div className="text-sm hover:scale-105 duration-300">
+        <div className="text-sm hover:translate-x-2 hover:text-amber-500 duration-300">
           <Link href="/posts">Voir toutes mes publications →</Link>
         </div>
       </div>

@@ -7,7 +7,7 @@ interface GalleryProps {
 }
 
 export const Gallery: FC<GalleryProps> = ({ postList }) => (
-  <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-1">
     {postList.map((elt) => (
       <BlogCard key={elt._id} post={elt} />
     ))}
