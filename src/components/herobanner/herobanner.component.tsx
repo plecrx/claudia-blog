@@ -30,10 +30,12 @@ export const HeroBanner: FC<HeroBannerProps> = ({ bannerData: { title, descripti
           {description}
         </p>
 
-        <div className="-ml-2.5 hover:translate-y-0.5 duration-200">
+        <div className="flex items-center -ml-2.5 hover:translate-y-0.5 duration-200 font-bold">
           <a href="https://www.youtube.com/channel/UCqA5IJ_JgLCvbITPeGUflug">
             <img title="Ma chaîne youtube" src="youtube-icon.png" width={64}/>
           </a>
+          Visiter ma chaîne Youtube
+
         </div>
       </div>
     </div>
