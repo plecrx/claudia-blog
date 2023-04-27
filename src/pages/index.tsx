@@ -19,7 +19,7 @@ const Home: FC<HomeProps> = ({ posts, banner }) => {
 }
 
 export const getServerSideProps = async () => {
-  const postsQuery = '*[_type == "post"]'
+  const postsQuery = '*[_type == "post"] | order(publishedAt desc)'
   const posts = await client.fetch(postsQuery)
 
   const bannerQuery = '*[_type == "banner"]'
